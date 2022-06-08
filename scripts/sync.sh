@@ -3,21 +3,21 @@
 # Source Vars
 source $CONFIG
 
-# Change to the Home Directory
+# Make Required Sync Folders
 cd ~
-
-# Make twrp Folder
-mkdir $SYNC_PATH/twrp
+mkdir work
+cd work
+mkdir twrp
 
 # Sync TWRP sources
-cd ~/$SYNC_PATH/twrp
+cd $SYNC_PATH
 repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b $TWRP_BRANCH  || { echo "ERROR: Failed to Sync TWRP Sources!" && exit 1; }
 
 #Clone TWRP source
 repo sync
 
 # Change to the Source Directory
-cd $SYNC_PATH/twrp
+cd $SYNC_PATH
 
 # Clone Trees
 git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }

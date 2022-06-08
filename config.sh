@@ -27,7 +27,7 @@ OF_USE_PROTON_CLANG=true
 export CUSTOM_CLANG_FOLDER="clang_13.0.0"
 
 # Not Recommended to Change
-export SYNC_PATH="$HOME/work" # Full (absolute) path.
+export SYNC_PATH="$HOME/work/twrp" # Full (absolute) path.
 export USE_CCACHE=1
 export CCACHE_SIZE="50G"
 export CCACHE_DIR="$HOME/work/.ccache"

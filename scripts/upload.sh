@@ -4,7 +4,7 @@
 source $CONFIG
 
 # Change to the Source Directory
-cd $SYNC_PATH/twrp
+cd $SYNC_PATH
 
 # Color
 ORANGE='\033[0;33m'

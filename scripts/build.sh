@@ -4,7 +4,7 @@
 source $CONFIG
 
 # Change to the Source Directry
-cd $SYNC_PATH/twrp
+cd $SYNC_PATH
 
 # Set-up ccache
 if [ -z "$CCACHE_SIZE" ]; then
