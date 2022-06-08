@@ -1,26 +1,22 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_11.0"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b inline-build"
+export TWRP_BRANCH="twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-ofox.git -b twrp-12.1"
 
 export DEVICE="lisa"
 export OEM="xiaomi"
 export TARGET="adbd bootimage"
 
-export OUTPUT="OrangeFox*.zip"
+export OUTPUT="*twrp*.img"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
-export KERNEL_SOURCE="https://github.com/Pranav-Talmale/android_kernel_xiaomi_lisa.git"
+#export KERNEL_SOURCE="https://github.com/Pranav-Talmale/android_kernel_xiaomi_lisa.git"
 #export PLATFORM="sm6150" # Leave it commented if you want to clone the kernel to kernel/$OEM/$DEVICE
 
 # Extra Command
 #export EXTRA_CMD="y u bulli me"
-
-# Magisk
-## Use the Latest Release of Magisk for the OrangeFox addon
-OF_USE_LATEST_MAGISK=true
 
 # Clang
 # Cloned in ~/work/prebuilts/clang/host/linux-x86/$CUSTOM_CLANG_FOLDER

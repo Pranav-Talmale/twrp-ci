@@ -1,7 +1,4 @@
 env:
-    # OrangeFox Sync Repository
-    FOX_SYNC: https://gitlab.com/OrangeFox/sync.git
-
     # Config
     CONFIG: config.sh
 
