@@ -16,6 +16,15 @@ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifes
 #Clone TWRP source
 repo sync
 
+#Clone required patches for twrp-12.1
+if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
+    echo "Cloning required patches for twrp to build..."
+    cd system/vold 
+	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/3 && git cherry-pick FETCH_HEAD
+	cd $SYNC_PATH/bootable/recovery
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/20 && git cherry-pick FETCH_HEAD    
+fi
+
 # Change to the Source Directory
 cd $SYNC_PATH
 
