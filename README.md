@@ -4,4 +4,4 @@ Used for building twrp.
 Only supports building twrp-12 and twrp-11 manifest
 
 ## Credits
-- [Sushrut1101](https://github.com/Sushrut1101) - For Making this CI
+- [Sushrut1101](https://github.com/Sushrut1101) - For Making the Original base of the CI
