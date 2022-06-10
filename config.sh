@@ -8,7 +8,7 @@ export DEVICE="raphael"
 export OEM="xiaomi"
 export TARGET="recoveryimage"
 
-export OUTPUT="*twrp*.img"
+export OUTPUT="output.zip"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.

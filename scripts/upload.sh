@@ -17,6 +17,9 @@ echo "============================"
 # Change to the Output Directory
 cd out/target/product/${DEVICE}
 
+# Zip the build 
+zip output.zip *.img *.img
+
 # Set FILENAME var
 FILENAME=$(echo $OUTPUT)
 
