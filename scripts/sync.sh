@@ -20,9 +20,10 @@ repo sync
 if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
     echo "Cloning required patches for twrp to build..."
     cd system/vold 
-	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/3 && git cherry-pick FETCH_HEAD
-	cd $SYNC_PATH/bootable/recovery
-	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/20 && git cherry-pick FETCH_HEAD    
+	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/3 && git cherry-pick FETCH_HEAD # libvold patch
+    cd $SYNC_PATH/bootable/recovery
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/20 && git cherry-pick FETCH_HEAD # fscrypt patch
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/33/5533/12 && git cherry-pick FETCH_HEAD # python prebuilts patch
 fi
 
 # Change to the Source Directory
