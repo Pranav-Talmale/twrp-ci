@@ -25,7 +25,7 @@ if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
 	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/23 && git cherry-pick FETCH_HEAD # fscrypt patch
 	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/33/5533/12 && git cherry-pick FETCH_HEAD # python prebuilts patch
 	cd $SYNC_PATH/system/core
-	git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/2 && git cherry-pick FETCH_HEAD # GKI modules loaded at first stage # skkk
+	git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/6 && git cherry-pick FETCH_HEAD # GKI modules loaded at first stage # skkk
 fi
 
 # Change to the Source Directory

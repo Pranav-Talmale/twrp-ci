@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-ofox.git -b twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b script-miui"
 
-export DEVICE="raphael"
+export DEVICE="lisa"
 export OEM="xiaomi"
-export TARGET="recoveryimage"
+export TARGET="adbd bootimage"
 
 export OUTPUT="output.zip"
 
