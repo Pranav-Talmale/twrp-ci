@@ -13,10 +13,17 @@ mkdir twrp
 cd $SYNC_PATH
 repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b $TWRP_BRANCH  || { echo "ERROR: Failed to Sync TWRP Sources!" && exit 1; }
 
-#Clone TWRP source
+# Clone TWRP source
 repo sync
 
-#Clone required patches for twrp-12.1
+# Clone custom repos if needed (there will be no gurantee if the custom repo will build properly)
+if [ "$CI_USE_CUSTOM_REPO" = "true" ]; then
+cd $SYNC_PATH/bootable
+rm -rf recovery
+git clone $REPO_LINK -b $REPO_BRANCH recovery || { echo "ERROR: Failed to Clone the custom repo!" && exit 1; }
+fi
+
+# Clone required patches for twrp-12.1
 if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
     echo "Cloning required patches for twrp to build..."
     cd system/vold

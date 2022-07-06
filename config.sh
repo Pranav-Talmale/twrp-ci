@@ -26,6 +26,11 @@ export OUTPUT="output.zip"
 #OF_USE_PROTON_CLANG=true
 #export CUSTOM_CLANG_FOLDER="clang_13.0.0"
 
+# Custom bootable/recovery repository
+export CI_USE_CUSTOM_REPO=true
+export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
+export REPO_BRANCH="test"
+
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work/twrp" # Full (absolute) path.
 export USE_CCACHE=1
