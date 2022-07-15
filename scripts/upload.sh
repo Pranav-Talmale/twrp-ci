@@ -18,7 +18,7 @@ echo "============================"
 cd out/target/product/${DEVICE}
 
 # Zip the build 
-zip output.zip *.img *.img
+zip output.zip recovery.img boot.img vendorboot.img
 
 # Set FILENAME var
 FILENAME=$(echo $OUTPUT)
