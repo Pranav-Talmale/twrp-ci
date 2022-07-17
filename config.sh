@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/device_xiaomi_laurel_sprout-recovery.git -b 12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b script-miui"
 
-export DEVICE="laurel_sprout"
+export DEVICE="lisa"
 export OEM="xiaomi"
-export TARGET="bootimage"
+export TARGET="adbd bootimage"
 
 export OUTPUT="output.zip"
 
@@ -30,7 +30,7 @@ export OUTPUT="output.zip"
 #export CI_USE_CUSTOM_REPO=true
 #export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
 #export REPO_BRANCH="test"
-#export TW_CLONE_SKKK_PATCHES=true
+export TW_CLONE_SKKK_PATCHES=true
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work/twrp" # Full (absolute) path.
