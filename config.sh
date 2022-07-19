@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-12.1"
+export TWRP_BRANCH="twrp-11.0"
 export DT_LINK="https://github.com/Pranav-Talmale/device_motorola_dubai.git -b twrp-12.1"
 
 export DEVICE="dubai"
 export OEM="motorola"
-export TARGET="adbd bootimage"
+export TARGET="bootimage"
 
 export OUTPUT="output.zip"
 
