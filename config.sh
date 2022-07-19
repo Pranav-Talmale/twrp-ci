@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-11.0"
+export TWRP_BRANCH="twrp-11"
 export DT_LINK="https://github.com/Pranav-Talmale/device_motorola_dubai.git -b twrp-12.1"
 
 export DEVICE="dubai"
