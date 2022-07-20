@@ -30,7 +30,7 @@ export OUTPUT="output.zip"
 #export CI_USE_CUSTOM_REPO=true
 #export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
 #export REPO_BRANCH="test"
-#export TW_CLONE_SKKK_PATCHES=true
+export TW_CLONE_SKKK_PATCHES=true
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work/twrp" # Full (absolute) path.
