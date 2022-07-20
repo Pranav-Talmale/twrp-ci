@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Pranav-Talmale/device_motorola_dubai.git -b twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/recovery_device_motorola_dubai.git -b 12.1"
 
 export DEVICE="dubai"
 export OEM="motorola"
