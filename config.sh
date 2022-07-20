@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-11"
-export DT_LINK="https://github.com/Pranav-Talmale/recovery_device_motorola_dubai.git -b 12.1"
+export TWRP_BRANCH="twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b dubai-port"
 
-export DEVICE="dubai"
-export OEM="motorola"
+export DEVICE="lisa"
+export OEM="bootimage"
 export TARGET="bootimage"
 
 export OUTPUT="output.zip"
@@ -45,4 +45,4 @@ else
     export KERNEL_PATH="kernel/$OEM/$DEVICE"
 fi
 export DT_PATH="device/$OEM/$DEVICE"
-#
+##
