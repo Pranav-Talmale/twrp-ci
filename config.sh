@@ -5,7 +5,7 @@ export TWRP_BRANCH="twrp-12.1"
 export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b port-dubai"
 
 export DEVICE="lisa"
-export OEM="bootimage"
+export OEM="xiaomi"
 export TARGET="bootimage"
 
 export OUTPUT="output.zip"
