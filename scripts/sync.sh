@@ -44,7 +44,7 @@ fi
 
 if [ "$TW_CLONE_PATCHED_ENGINE" = "true" ]; then
    cd $SYNC_PATH/system
-     rm -rf update engine
+     rm -rf update_engine
      git clone https://github.com/Pranav-Talmale/android_system_update_engine-1.git -b lineage19.1 update_engine
 fi     
 	
