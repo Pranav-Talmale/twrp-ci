@@ -41,6 +41,12 @@ if [ "$TW_CLONE_SKKK_PATCHES" = "true" ]; then
 	cd $SYNC_PATH/bootable/recovery
 	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/93/5693/2 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone a misc. patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/93/5693/2 && git cherry-pick FETCH_HEAD; } # exfat #skkk
 fi	
+
+if [ "$TW_CLONE_PATCHED_ENGINE" = "true" ]; then
+   cd $SYNC_PATH/system
+     rm -rf update engine
+     git clone https://github.com/Pranav-Talmale/android_system_update_engine-1.git -b lineage19.1 update_engine
+fi     
 	
 # Change to the Source Directory
 cd $SYNC_PATH
