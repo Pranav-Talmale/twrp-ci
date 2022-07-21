@@ -28,18 +28,18 @@ if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
     echo "Cloning required patches for twrp to build..."
     cd system/vold
     echo "Cloning LibVold Patch...."	
-	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD # libvold patch
+	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone libvold patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD; } # libvold patch
     cd $SYNC_PATH/bootable/recovery
 	echo "Cloning FScrypt patch..."
-	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/25 && git cherry-pick FETCH_HEAD || { echo "ERROR: Failed to Clone fscrypt patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/25 && git cherry-pick FETCH_HEAD; } # fscrypt patch
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/26 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone fscrypt patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/25 && git cherry-pick FETCH_HEAD; } # fscrypt patch
 fi
 
 if [ "$TW_CLONE_SKKK_PATCHES" = "true" ]; then
     cd $SYNC_PATH/system/core
 	echo "Cloning other miscellaneous patches..."
-	git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/6 && git cherry-pick FETCH_HEAD # first_stage_init # skkk #sm8350 
+	git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/6 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone a misc. patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/6 && git cherry-pick FETCH_HEAD; } # first_stage_init # skkk #sm8350 
 	cd $SYNC_PATH/bootable/recovery
-	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/93/5693/2 && git cherry-pick FETCH_HEAD # exfat #skkk
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/93/5693/2 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone a misc. patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/93/5693/2 && git cherry-pick FETCH_HEAD; } # exfat #skkk
 fi	
 	
 # Change to the Source Directory
