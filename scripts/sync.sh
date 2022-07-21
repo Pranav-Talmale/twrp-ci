@@ -46,7 +46,7 @@ if [ "$TW_CLONE_PATCHED_ENGINE" = "true" ]; then
    cd $SYNC_PATH/system
      rm -rf update_engine
      mv update_engine old_engine
-     git clone https://github.com/Pranav-Talmale/android_system_update_engine-1.git -b lineage19.1 update_engine
+     git clone https://github.com/Pranav-Talmale/android_system_update_engine-1.git -b lineage-19.1 update_engine
 fi     
 	
 # Change to the Source Directory
