@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b port-dubai"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b realme-port"
 
 export DEVICE="lisa"
 export OEM="xiaomi"
