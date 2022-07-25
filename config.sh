@@ -6,7 +6,7 @@ export DT_LINK="https://github.com/Pranav-Talmale/android_device_nokia_NB1-TWRP-
 
 export DEVICE="NB1"
 export OEM="nokia"
-export TARGET="recoveryimage"
+export TARGET="bootimage"
 
 export OUTPUT="output.zip"
 
