@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b port-dubai"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_nokia_NB1-TWRP-new -b android-11"
 
-export DEVICE="lisa"
-export OEM="xiaomi"
-export TARGET="bootimage"
+export DEVICE="NB1"
+export OEM="nokia"
+export TARGET="recoveryimage"
 
 export OUTPUT="output.zip"
 
@@ -30,7 +30,7 @@ export OUTPUT="output.zip"
 #export CI_USE_CUSTOM_REPO=true
 #export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
 #export REPO_BRANCH="test"
-export TW_CLONE_SKKK_PATCHES=true
+#export TW_CLONE_SKKK_PATCHES=true
 
 
 # Not Recommended to Change
