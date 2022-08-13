@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b dynamic-partitions"
+export DT_LINK="https://github.com/Pranav-Talmale/NB1-test -b 12.1-NB1"
 
-export DEVICE="raphael"
-export OEM="xiaomi"
-export TARGET="recoveryimage"
+export DEVICE="NB1"
+export OEM="nokia"
+export TARGET="bootimage"
 
 export OUTPUT="output.zip"
 
