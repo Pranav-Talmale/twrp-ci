@@ -2,9 +2,9 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_motorola_dubai-twrp.git -b twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_motorola_caprip-twrp -b main"
 
-export DEVICE="dubai"
+export DEVICE="caprip"
 export OEM="motorola"
 export TARGET="adbd bootimage"
 
