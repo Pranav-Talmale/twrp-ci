@@ -23,17 +23,6 @@ rm -rf recovery
 git clone $REPO_LINK -b $REPO_BRANCH recovery || { echo "ERROR: Failed to Clone the custom repo!" && exit 1; }
 fi
 
-# Clone required patches for twrp-12.1
-if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
-    echo "Cloning required patches for twrp to build..."
-    cd system/vold
-    echo "Cloning LibVold Patch...."	
-	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone libvold patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD; } # libvold patch
-    cd $SYNC_PATH/bootable/recovery
-	echo "Cloning FScrypt patch..."
-	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/26 && git cherry-pick FETCH_HEAD || { echo "WARNING: Failed to Clone fscrypt patch! Trying to clone again" && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/25 && git cherry-pick FETCH_HEAD; } # fscrypt patch
-fi
-
 if [ "$TW_CLONE_SKKK_PATCHES" = "true" ]; then
     cd $SYNC_PATH/system/core
 	echo "Cloning other miscellaneous patches..."
