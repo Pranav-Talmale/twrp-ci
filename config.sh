@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_motorola_caprip-twrp -b main"
+export DT_LINK="https://github.com/Pranav-Talmale/device_xiaomi_marble_TWRP.git -b twrp-12.1"
 
-export DEVICE="caprip"
-export OEM="motorola"
-export TARGET="adbd bootimage"
+export DEVICE="marble"
+export OEM="xiaomi"
+export TARGET="recoveryimage"
 
 export OUTPUT="output.zip"
 
